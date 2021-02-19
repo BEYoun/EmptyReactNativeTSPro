@@ -6,8 +6,11 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "lint:style": "prettier --check 'src/**/**.{js,ts,jsx,tsx}'",
+    "lint:code": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "lint": "npm run lint:style && npm run lint:code",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "sanity": "npm run lint && npm run test"
   },
   "dependencies": {
     "react": "16.13.1",
@@ -40,5 +43,9 @@
       "json",
       "node"
     ]
+  },
+  "engines": {
+    "node": "15.8.0",
+    "npm": "7.5.1"
   }
 }

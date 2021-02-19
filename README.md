@@ -1,0 +1,1 @@
+https://dev.to/tmenyhart/pro-tips-for-setting-up-a-react-native-project-in-2020-j00
